@@ -1,0 +1,12 @@
+一、ToolBar
+Google在2015的IO大会上发布了系列的Material Design风格的控件。其中ToolBar是替代ActionBar的控件。由于ActionBar在各个安卓版本和定制Rom中的效果表现不一，导致严重的碎片化问题，ToolBar应运而生。
+
+与ActionBar区别
+显示效果跟ActionBar并没有区别。
+优点：自定义视图的操作更加简单，状态栏的颜色可以调（Android 4.4以上）。
+二、ActionBar
+ActionBar位于Activity的顶部，可用来显示activity的标题、Icon、Actions和一些用于交互的View。它也可被用于应用的导航。
+ActionBar 是在Android 3.0(API 11）中加入到SK中的，想在低版本中使用ActionBar有两种选择：使用http://actionbarsherlock.com 或使用Support Library v7。
+特别说明
+AndroidStudio中按照默认的Activity启动时，不显示ActionBar的问题
+在Eclipse新建一个MainActivity extends Activity时，能够正常显示ActionBar，但在AS中extends Activity，不显示ActionBar，在AS中extends ActionBarActivity，能够正常显示ActionBar，但是会显示该类过时，推荐使用extends AppCompatActivity
